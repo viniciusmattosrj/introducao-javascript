@@ -1,3 +1,4 @@
+/* Function com Apply e passando mais parametros */
 var getIdade = function(extra){
   console.log(arguments);
   return this.idade + extra;
