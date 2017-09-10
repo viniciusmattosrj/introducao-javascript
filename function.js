@@ -21,7 +21,11 @@ var Pessoa = function (nome, idade){
 console.log(new Pessoa("Pedro", 20));
 console.log(new Pessoa("Maria", 30));
 
-//Exemplo para ilustrar
+//Exemplo Construtora com Apply para ilustrar
 var pedro = {};
 Pessoa.call(pedro, "Pedro", 20);
 console.log(pedro);
+
+var maria = {}
+Pessoa.call(maria, "Maria", 30);
+console.log(maria);
