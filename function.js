@@ -1,3 +1,4 @@
+/* Funções de 1ª classe */
 var helloWorld = function(){
   return function (){
     return "Hello World!";
