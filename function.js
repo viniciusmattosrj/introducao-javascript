@@ -9,3 +9,4 @@ var pessoa = {
 };
 
 console.log(pessoa.getIdade());
+console.log(getIdade.call(pessoa));
