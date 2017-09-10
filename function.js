@@ -1,10 +1,11 @@
-/* Funções de 1ª classe */
-var helloWorld = function(){
-  return function (){
-    return "Hello World!";
+var pessoa = {
+  nome:"João",
+  idade:20,
+  getIdade: function(){
+    return idade;
   }
 };
 
-console.log(helloWorld);
-console.log(helloWorld());
-console.log(helloWorld()());
+console.log(pessoa);
+console.log(pessoa.getIdade);
+console.log(pessoa.getIdade());
