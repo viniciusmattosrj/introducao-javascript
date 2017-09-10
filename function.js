@@ -1,5 +1,5 @@
-var getIdade = function(){
-  return this.idade;
+var getIdade = function(extra){
+  return this.idade + extra;
 }
 
 var pessoa = {
@@ -8,5 +8,6 @@ var pessoa = {
   getIdade: getIdade
 };
 
-console.log(pessoa.getIdade());
-console.log(getIdade.call(pessoa));
+console.log(pessoa.getIdade(2));
+console.log(getIdade.call(pessoa, 2));
+console.log(getIdade.apply(pessoa,[2]));
