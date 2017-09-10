@@ -1,5 +1,9 @@
-var soma = function soma(a, b){
-  return a + b;
-}
+var helloWorld = function(){
+  return function (){
+    return "Hello World!";
+  }
+};
 
-console.log(soma(2, 2));
+console.log(helloWorld);
+console.log(helloWorld());
+console.log(helloWorld()());
