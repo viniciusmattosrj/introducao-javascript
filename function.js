@@ -20,3 +20,8 @@ var Pessoa = function (nome, idade){
 
 console.log(new Pessoa("Pedro", 20));
 console.log(new Pessoa("Maria", 30));
+
+//Exemplo para ilustrar
+var pedro = {};
+Pessoa.call(pedro, "Pedro", 20);
+console.log(pedro);
