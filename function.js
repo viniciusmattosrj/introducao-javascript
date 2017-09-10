@@ -2,7 +2,7 @@ var pessoa = {
   nome:"João",
   idade:20,
   getIdade: function(){
-    return idade;
+    return this.idade;
   }
 };
 
