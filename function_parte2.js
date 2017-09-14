@@ -4,6 +4,9 @@ var counter = (function()){
 	return{
 		add:function(){
 			return ++value;
+		},
+		reset: function(){
+			value = 0;
 		}
 	};
 })();
