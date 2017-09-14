@@ -1,16 +1,20 @@
-/* FUNCTION FACTORY - Module Pattern */
-var counter = (function()){
-	var value = 0;
+/* FUNCTION FACTORY - Revealing Module Pattern */
+var counter = (function(){
+	var _value = 0;
+	var _add = function(){
+		return ++_value;
+	};
+	var _reset = function(){
+		_value = 0;
+	};
 	return{
-		add:function(){
-			return ++value;
-		},
-		reset: function(){
-			value = 0;
-		}
+		add: _add,
+		reset: _reset
 	};
 })();
 console.log(counter.value);
 console.log(counter.add());
 console.log(counter.add());
+console.log(counter.add());
+counter.reset();
 console.log(counter.add());
