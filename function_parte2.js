@@ -15,6 +15,6 @@ var itens = {
 		return this.value;
 	}	
 };
-console.log(counter.add());
-console.log(counter.add());
-console.log(counter.add());
+console.log(itens.add('A'));
+console.log(itens.add('B'));
+console.log(itens.add('C'));
