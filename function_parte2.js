@@ -1,11 +1,12 @@
-/* FUNCTION FACTORY II */
-var Counter = function(){
+/* FUNCTION FACTORY - Module Pattern */
+var counter = (function()){
 	var value = 0;
-	this.add = function (){
-		return ++value;
+	return{
+		add:function(){
+			return ++value;
+		}
 	};
-};
-var counter = new Counter();
+})();
 console.log(counter.value);
 console.log(counter.add());
 console.log(counter.add());
