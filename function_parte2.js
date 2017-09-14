@@ -1,14 +1,11 @@
-/* FACTORY FUNCTION */
-/* Função criando contador */
-var createCounter = function (){
+/* FUNCTION FACTORY II */
+var Counter = function(){
 	var value = 0;
-	return{
-		add: function (){
-			return ++value;
-		}
+	this.add = function (){
+		return ++value;
 	};
 };
-var counter = createCounter();
+var counter = new Counter();
 console.log(counter.value);
 console.log(counter.add());
 console.log(counter.add());
