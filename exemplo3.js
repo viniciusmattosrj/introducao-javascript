@@ -1,4 +1,4 @@
-/* Expressão Regular */
+/* Expressão Regular - 3º Exemplo */
 
 var regExp = /^\(48\) 9999-9999$/; // Inclusão do escape, validando inicio e final
 var telefone = "(48) 9999-9999";
