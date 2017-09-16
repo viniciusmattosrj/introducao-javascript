@@ -11,9 +11,11 @@ var counter = (function(){
 		add: _add,
 		reset: _reset
 	};
-})();
+})(); /* Auto invocação do método (boa prática) */
 console.log(counter.value);
-console.log(counter.add());
+
+console.log(counter.add())
+
 console.log(counter.add());
 console.log(counter.add());
 counter.reset();
