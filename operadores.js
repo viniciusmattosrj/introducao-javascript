@@ -1,7 +1,9 @@
 
 
 var generateSerial = function(max){
-	
+	if(!max){
+		max = 1000;
+	}
 	return Math.floor(Math.random() * max);
 };
 
