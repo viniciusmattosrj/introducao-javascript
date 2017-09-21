@@ -1,11 +1,15 @@
 
-
-var generateSerial = function(max){
-	max = max || 1000;
-	return Math.floor(Math.random() * max);
+var Pessoa = function (nome, idade){
+	this.nome = nome;
+	this.idade = idade;
 };
 
-console.log(generateSerial(1000));
-console.log(generateSerial(100));
-console.log(generateSerial(10));
-console.log(generateSerial());
+var pedro = new Pessoa("Pedro", 20);
+console.log(pedro);
+console.log(pedro instanceof Pessoa);
+console.log(pedro instanceof Date);
+console.log("nome" in pedro);
+console.log("peso" in pedro);
+
+delete pedro.nome;
+console.log("nome" in pedro);
