@@ -33,5 +33,9 @@ var toHackerCase = function(text) {
 	}
 	return hackerTextArray.join("");
 };
+try{
+	console.log(toHackerCase());	
+} catch (e){
+	console.log("Error: " + e);	
+}
 console.log(toHackerCase(text));
-console.log(toHackerCase());
