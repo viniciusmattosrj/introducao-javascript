@@ -8,7 +8,8 @@ var hackerTextError = function (message){
 };
 
 var toHackerCase = function(text) {
-	if(!text) throw new HackerTextError ("Invalid text.");
+	if(!text) throw new HackerTextError("Invalid text.");
+	if(typeof text !== "string") throw new HackerTextError("Invalid type.");
 	var hackerTextArray = [];
 	var i = 0;
 	while (i < text.length){
@@ -41,6 +42,6 @@ var toHackerCase = function(text) {
 try{
 	console.log(toHackerCase());	
 } catch (e){
-	console.log("Error: " + e.message);	
+	console.log("Error: " + e.message + " " + e.name);	
 }
 console.log(toHackerCase(text));
