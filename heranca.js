@@ -21,6 +21,6 @@ console.log(joao);
 console.log(joao.sexo);
 
 for (var property in joao){
-	if(! joao.hasOwnProperty(property)) continue;
+	//if(! joao.hasOwnProperty(property)) continue;
 	console.log(property);
 }
