@@ -19,3 +19,5 @@ Object.setPrototypeOf(joao, homem);
 
 console.log(joao);
 console.log(joao.sexo);
+
+console.log(Object.keys(joao));
