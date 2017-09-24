@@ -1,20 +1,17 @@
 var Homem = function (nome, idade){
   this.nome = nome;
   this.idade = idade;
-  this.sexo = "masculino";
 };
+
+Homem.prototype.sexo = "masculino";
 
 var joao = new Homem("João",20);
 console.log(joao);
+console.log(joao.sexo);
 
-/* Exemplo com call() */
-/*
 var pedro = {};
-Homem.call(pedro, "Pedro", 18);
-console.log(pedro);
-*/
-
-/* Exemplo com apply() */
-var pedro = {};
+/* O new faz o apontamento para essa linha */
+pedro.__proto__ = Homem.prototype;
 Homem.apply(pedro, ["Pedro", 18]);
 console.log(pedro);
+console.log(pedro.sexo);
