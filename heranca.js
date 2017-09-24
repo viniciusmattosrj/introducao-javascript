@@ -4,15 +4,13 @@ var homem ={
 
 var joao = {
 	nome: "João",
-	idade:20,
-	__proto__: homem
+	idade:20
 };
+Object.setPrototypeOf(joao, homem);
 
-var pedro = {
-	nome: "Pedro",
-	idade:18,
-	__proto__: homem
-};
+var pedro = Object.create(homem);
+pedro.nome = "Pedro";
+pedro.idade = 18;
 
 console.log(joao);
 console.log(joao.sexo);
