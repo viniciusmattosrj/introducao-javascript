@@ -4,6 +4,7 @@ var homem ={
 
 var joao = {
 	nome: "João",
+<<<<<<< HEAD
 	idade:20,
 	sexo: "feminino"
 };
@@ -24,3 +25,15 @@ for (var property in joao){
 	//if(! joao.hasOwnProperty(property)) continue;
 	console.log(property);
 }
+=======
+	idade:20
+};
+
+var pedro = {
+	nome: "Pedro",
+	idade:18
+};
+
+console.log(joao);
+console.log(pedro);
+>>>>>>> e612abb17b1288fddf69af6077c2cb5c75c7135a
